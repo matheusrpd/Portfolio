@@ -1,97 +1,144 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  outline: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
-    display: flex;
-    align-items: center; 
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
-    width: 100%;
-    max-width: 980px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
 header .logo {
-    font-weight: 400;
-    font-size: 1.17em;
+  font-weight: 400;
+  font-size: 1.17em;
 }
 
 header .text-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 header .menu-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .menu-list li a {
-    text-decoration: none;
-    padding-left: 40px;
-    color: #000;
+  text-decoration: none;
+  padding-left: 40px;
+  color: #000;
 }
 
 main {
-    width: 100%;
-    max-width: 1080px;
-    height: 700px;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
+  width: 100%;
+  max-width: 1080px;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
 }
 
 main .desing {
-    background-color: #000;
-    width: 50%;
+  background-color: #000;
+  width: 50%;
 }
 
 main .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 50%;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 30px;
 }
 
 main .presentation h3 {
-    font-size: 2rem;
-    text-transform: uppercase; 
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 main .presentation .description {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 main .presentation .social {
-    margin-top: 20px;
-}
-
-main .presentation .buttons {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 main .presentation .social .social-icons {
-    font-size: 20px;
-    margin-top: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+main .presentation .social .social-icons i {
+  cursor: pointer;
 }
 
 main .presentation .social .social-icons i:not(:first-child) {
-    padding-left: 20px;
+  padding-left: 20px;
+}
+
+main .presentation .buttons {
+  margin-top: 40px;
+}
+
+main .presentation .buttons .portfolio {
+  width: 150px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  background: #ee2455;
+  cursor: pointer;
+
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+main .presentation .buttons .portfolio:hover {
+  opacity: 0.7;
+}
+
+main .presentation .buttons .about {
+  width: 150px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #22a6d8;
+  margin-left: 10px;
+  cursor: pointer;
+
+  color: #22a6d8;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+main .presentation .buttons .about:hover {
+  border: 0;
+  background: #22a6d8;
+  color: #fff;
 }
