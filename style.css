@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+/*  global */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2B9DFF;
+    --second: #A52BFF;
+    --black: #202427;
+    --gray: #DFE2EA;
+    --gradient: linear-gradient(var(--primary), var(--second));
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/*  page main */
+
+.main {
+    padding: 0 10%;
+}
+
+.main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.main header h1 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.main header h1 span {
+    font-weight: 700;
+}
+
+.main header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.main header nav ul li a {
+    color: var(--black);
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 44px;
+}
+
+.main .content {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content .info h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.main .content .info p {
+    margin-top: 0.5em;
+    font-size: 18px;
+    font-weight: 600;
+    width: 400px;
+}
+
+.main .content .info button {
+    width: 120px;
+    height: 40px;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    color: var(--primary);
+    background: transparent;
+    margin-top: 25px;
+
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.main .content .info button:hover {
+    color: #fff;
+    background: var(--primary);
+}
+
+/*  page services */
+
+.services {
+    padding: 0 10%;
+}
+
+.services h3 {
+    margin-top: 100px;
+    font-size: 170px;
+    font-weight: 800;
+    color: var(--gray);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.services .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -70px;
+}
+
+.services .cards .card {
+    z-index: 99;
+    width: 410px;
+    height: 390px;
+    margin: 6px;
+    padding: 60px 45px;
+    border-radius: 25px 25px 140px 25px;
+
+    background: #fff;
+    box-shadow: 0 15px 60px rgba(38, 44, 52, .08);
+}
+
+.services .cards .card h4 {
+    font-size: 25px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.services .cards .card p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--black);
+}
+
+.services .cards .card img {
+    width: 150px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.services .cards .card .react {
+    width: 170px;
+    height: auto;
+}
+
+/*  page about me */
+
+.about {
+    padding: 0 10%;
+    margin-top: 250px;
+    text-align: right;
+    height: 800px;
+    background: var(--gradient);
+}
+
+.about h3 {
+    font-size: 170px;
+    font-weight: 800;
+    color: #fff;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.about .info {
+    margin-top: 60px;
+}
+
+.about .info p {
+    color: #fff;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+.about .info .author {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 40px;
+}
+
+.about .info .author .text {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.about .info .author .text h4 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.about .info .author .text h5 {
+    font-weight: 400;
+}
+
+.about .info .author img {
+    width: 120px;
+    height: auto;
+}
+
+/*  page projects */
+
+.projects {
+    padding: 0 10%;
+    width: 100%;
+}
+
+.project {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project .text {
+    width: 50%;
+    height: 400px;
+    margin: 5% 0 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .text2 {
+    width: 50%;
+    height: 400px;
+    margin: 5% 5% 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .text h1 {
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.project .text p {
+    margin-top: 2%;
+    color: var(--black);
+}
+
+.project .text button {
+    width: 140px;
+    height: 40px;
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.project .text2 h1 {
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.project .text2 p {
+    margin-top: 2%;
+    color: var(--black);
+}
+
+.project .text2 button {
+    width: 140px;
+    height: 40px;
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.project img {
+    height: 400px;
+    width: auto;
+    box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
+}
+
+/*  page contact */
+
+.contact {
+    padding: 0 10%;
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .text {
+    text-align: center;
+}
+
+.contact .text h3 {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.contact .text p {
+    color: var(--black);
+}
+.contact form {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input,textarea {
+    margin-top: 4%;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: var(--black);
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder  {
+     color:var(--black); 
+     font-family: "Open Sans", Arial, Helvetica, sans-serif;
+     font-size: 14px;
+}
+
+input:-moz-placeholder { 
+    color:var(--black); 
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+textarea:-moz-placeholder { 
+    color:var(--black); 
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.contact form input[type=submit]{
+    width: 30%;
+    height: 50px;
+    margin-top: 3%;
+    border: 0;
+    border-radius: 5px;
+    background: var(--second);
+    color: #fff;
+    padding: 4px 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact form input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+.contact .social {
+    margin: 10% 0 5% 0;
+    text-align: center;
+}
+
+.contact .social p {
+    color: var(--black);
+    opacity: 0.7;
+}
+
+.contact .social .icons {
+    margin-top: 20px;
+}
+
+.contact .social .icons a img {
+    height: 30px;
+    margin: 0 20px;
+}
+
+
+
+
+
+
+
