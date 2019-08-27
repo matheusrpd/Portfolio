@@ -34,6 +34,11 @@ body {
 
 .main {
     padding: 0 10%;
+    background: url("./imagens/image.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
 }
 
 .main header {
@@ -44,8 +49,10 @@ body {
 }
 
 .main header h1 {
+    font-family: "Poppins", sans-serif;
     font-size: 22px;
     font-weight: 400;
+    color: #fff;
 }
 
 .main header h1 span {
@@ -60,65 +67,58 @@ body {
 .main header nav ul li a {
     color: var(--black);
     font-size: 17px;
-    font-weight: 600;
+    font-weight: bold;
     margin-left: 44px;
+    color: #fff;
 }
 
-.main .content {
-    margin-top: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+article {
+    width: 60%;
+    margin: 0 auto;
 }
 
-.main .content .info {
-    display: flex;
-    flex-direction: column;
-}
-
-.main .content .info h2 {
+.main article h2 {
     font-size: 2.5em;
     text-transform: uppercase;
-    color: var(--primary);
+    color: #fff;
 }
 
-.main .content .info p {
-    margin-top: 0.5em;
+.main article p {
+    margin-top: .5em;
     font-size: 18px;
     font-weight: 600;
-    width: 400px;
-}
-
-.main .content .info button {
-    width: 120px;
-    height: 40px;
-    border: 2px solid var(--primary);
-    border-radius: 4px;
-    color: var(--primary);
-    background: transparent;
-    margin-top: 25px;
-
-
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.main .content .info button:hover {
     color: #fff;
-    background: var(--primary);
+}
+
+.main article img {
+    margin: 2%;
 }
 
 /*  page services */
 
 .services {
+    width: 100%;
+    height: 700px;
     padding: 0 10%;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.services::after {
+    bottom: 0;
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 100%;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1;
 }
 
 .services h3 {
-    margin-top: 100px;
+    padding-top: 5%;
     font-size: 170px;
     font-weight: 800;
     color: var(--gray);
@@ -171,67 +171,12 @@ body {
     height: auto;
 }
 
-/*  page about me */
-
-.about {
-    padding: 0 10%;
-    margin-top: 250px;
-    text-align: right;
-    height: 800px;
-    background: var(--gradient);
-}
-
-.about h3 {
-    font-size: 170px;
-    font-weight: 800;
-    color: #fff;
-    opacity: 0.4;
-    top: 0;
-    right: 0;
-    text-transform: uppercase;
-}
-
-.about .info {
-    margin-top: 60px;
-}
-
-.about .info p {
-    color: #fff;
-    margin-left: 200px;
-    margin-top: 15px;
-}
-
-.about .info .author {
-    display: flex;
-    align-items: center;
-    float: right;
-    margin-top: 40px;
-}
-
-.about .info .author .text {
-    margin-right: 20px;
-    color: #fff;
-}
-
-.about .info .author .text h4 {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.about .info .author .text h5 {
-    font-weight: 400;
-}
-
-.about .info .author img {
-    width: 120px;
-    height: auto;
-}
-
 /*  page projects */
 
 .projects {
     padding: 0 10%;
     width: 100%;
+    margin-top: 100px;
 }
 
 .project {
@@ -241,18 +186,14 @@ body {
     justify-content: space-between;
 }
 
-.project .text {
-    width: 50%;
-    height: 400px;
-    margin: 5% 0 0 5%;
-    display: flex;
-    flex-direction: column;
+.project img {
+    height: 750px;
+    margin-left: 60px;
 }
 
-.project .text2 {
-    width: 50%;
-    height: 400px;
-    margin: 5% 5% 0 0;
+.project .text {
+    width: 40%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -279,41 +220,69 @@ body {
     background: var(--primary);
     color: #fff;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.project .text2 h1 {
-    color: var(--primary);
-    font-size: 35px;
+.project .text button:hover {
+    transform: translateY(-3px);
+}
+/*  page github */
+
+.github {
+    background: url("./imagens/github-background.png") no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.github h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
-.project .text2 p {
-    margin-top: 2%;
-    color: var(--black);
+.github p {
+    width: 100%;
+    max-width: 450px;
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.project .text2 button {
-    width: 140px;
+.github button {
+    width: 200px;
     height: 40px;
-    margin-top: 5%;
+    margin-top: 8px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     border: 0;
     border-radius: 5px;
-    background: var(--primary);
-    color: #fff;
+    background: #fff;
+    color: #000;
     cursor: pointer;
+    position: relative;
+    padding-left: 50px;
+    transition: all 0.2s ease;
 }
 
-.project img {
-    height: 400px;
-    width: auto;
-    box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
+.github button::before {
+    position: absolute;
+    display: block;
+    left: 20%;
+    top: 7px;
+    content: url("./imagens/github-logo.png");
+}
+
+.github button:hover {
+    transform: translateY(-3px);
 }
 
 /*  page contact */
 
 .contact {
+    margin-top: 80px;
     padding: 0 10%;
     width: 100%;
     height: 90vh;
@@ -336,7 +305,7 @@ body {
     color: var(--black);
 }
 .contact form {
-    margin-top: 7%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
 }
@@ -387,7 +356,7 @@ textarea:-moz-placeholder {
 }
 
 .contact .social {
-    margin: 10% 0 5% 0;
+    margin: 7% 0 5% 0;
     text-align: center;
 }
 
@@ -403,6 +372,11 @@ textarea:-moz-placeholder {
 .contact .social .icons a img {
     height: 30px;
     margin: 0 20px;
+    transition: all 0.2s ease;
+}
+
+.contact .social .icons a img:hover {
+    transform: translateY(-3px);
 }
 
 
