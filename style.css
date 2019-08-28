@@ -209,23 +209,25 @@ article {
     color: var(--black);
 }
 
-.project .text button {
+.project .text a {
     width: 140px;
-    height: 40px;
+    padding: 10px 7px;
     margin-top: 5%;
     text-transform: uppercase;
     font-weight: 600;
     border: 0;
+    text-align: center;
     border-radius: 5px;
     background: var(--primary);
-    color: #fff;
     cursor: pointer;
+    color: #fff;
     transition: all 0.2s ease;
 }
 
-.project .text button:hover {
+.project .text a:hover {
     transform: translateY(-3px);
 }
+
 /*  page github */
 
 .github {
@@ -245,16 +247,14 @@ article {
 
 .github p {
     width: 100%;
-    max-width: 450px;
-    margin: 10px auto;
+    max-width: 650px;
+    margin: 0 auto 25px auto;
     font-size: 18px;
     font-weight: bold;
 }
 
-.github button {
+.github a {
     width: 200px;
-    height: 40px;
-    margin-top: 8px;
     text-transform: uppercase;
     font-weight: 700;
     border: 0;
@@ -263,20 +263,15 @@ article {
     color: #000;
     cursor: pointer;
     position: relative;
-    padding-left: 50px;
-    transition: all 0.2s ease;
+    padding: 10px 20px 10px 55px;
 }
 
-.github button::before {
+.github a::before {
     position: absolute;
     display: block;
-    left: 20%;
+    left: 12%;
     top: 7px;
     content: url("./imagens/github-logo.png");
-}
-
-.github button:hover {
-    transform: translateY(-3px);
 }
 
 /*  page contact */
